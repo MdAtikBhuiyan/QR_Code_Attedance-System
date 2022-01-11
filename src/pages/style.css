@@ -1,0 +1,229 @@
+/* home-area */
+
+.home{
+    display: block;
+    overflow: hidden;
+    height: 100vh;
+    background-color: #16a085;
+}
+.description{
+    margin-top: 30px;
+    position: absolute;
+    top: 20%;
+    left: 12%;
+    color: white;
+}
+.home img{
+    width: 100%;
+    height: 98vh;
+    margin: 15px 0 0 0;
+}
+.icon svg{
+    font-size: 28px;
+    margin-right: 20px;
+}
+.home button{
+    font-size: 18px;
+    color: rgb(255 109 109);
+    font-weight: 500;
+}
+
+/* log in area */
+
+/* .login-area {
+    display: block;
+    overflow: hidden;
+    min-height: 100vh;
+    background-color: #2f3b52;
+} */
+
+.login-area{
+    display: block;
+    overflow: hidden;
+}
+.login-area img{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.login-area .col-md-7,
+.login-area .col-md-5{
+    padding-right: 0;
+    padding-left: 0;
+}
+
+/* .login-bg{
+    background-image: linear-gradient(rgba(0,168,255,0.3),rgba(0,168,255,0.3)), url('../images//login-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 115vh;
+    width: 100%;
+} */
+.login-content{
+    background-color: #2f3b52;
+    min-height: 100vh;
+    text-align: center;
+}
+.login-content img{
+    width: 30px;
+    height: 40px;
+    margin-top: 50px;
+}
+.signIn-area,
+.signUp-area{
+    width: 80%;
+    margin: 30px auto 0;
+    padding-bottom: 20px;
+    text-align: left;
+}
+.signIn-area h3,
+.signUp-area h3{
+   color: #fff;
+   margin-bottom: 30px;
+   text-align: center;
+}
+.signIn-area label,
+.signUp-area label{
+    color: #fff;
+    font-size: 16px;
+ }
+ .login-btn{
+     color: white !important;
+     font-weight: 500 !important;
+     margin-top: 10px;
+ }
+ .optional-option{
+     color: rgb(179 179 179);
+     text-align: center;
+     margin-top: 40px;
+ }
+ .optional-option button{
+    color: #0797fd;
+    font-weight: 600;
+    border: none;
+    background: transparent;
+    font-size: 18px;
+}
+
+
+/* logout */
+.logout-area{
+    display: block;
+    overflow: hidden;
+    min-height: 100vh;
+    /* background: #2f3b52; */
+}
+.logout-info {
+    width: 400px;
+    margin: auto;
+    background: #41516dc4 ;
+    border-radius: 10px;
+    padding: 20px 20px 10px;
+    margin-top: 80px;
+    color: white;
+    text-align: center;
+    box-shadow: 2px 2px 15px #a2baec !important;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.logout-info p{
+    color: #14ff14;
+    font-weight: 500;
+    font-size: 18px;
+}
+.logout-info button{
+    padding: 8px 25px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+/* Tnav */
+
+.navbar-brand{
+    font-size: 42px !important;
+    color: white !important;
+}
+.nav-link{
+    color: rgb(255, 255, 255) !important;
+    font-size: 20px !important;
+    margin: 0 15px !important;
+    border-bottom: 3px solid transparent;
+}
+.nav-link:hover,
+.nav-link:focus{
+    color: white !important;
+    border-bottom: 3px solid white;
+}
+.log-btn:hover{
+    border-bottom: none !important;
+}
+
+/* Take attedance */
+.takes-area{
+    height: 100vh;
+}
+.takes-area h4{
+    text-decoration: underline;
+}
+.takes-area label{
+    font-size: 18px;
+    font-weight: bold;
+}
+.take-form input,
+.take-form button{
+    width: 65%;
+}
+.qr-area{
+    margin-top: 150px;
+}
+
+
+
+/* responsive */
+
+@media only screen and (max-width: 767px) {
+    .home img{
+        width: 100%;
+        height: 100%;
+        margin: 120px 0 0 0;
+    }
+    .description{
+        position: static;
+        /* margin-top: 30px;
+        left: 0%;
+        color: white;
+        display: block; */
+    }
+    .description h1{
+        font-size: 22px;
+    }
+    .logout-info{
+        width: 90%;
+    }
+    .take-cont{
+        background-color: #17a2b8!important;
+    }
+    .home button{
+        font-size: 16px;
+    }
+    .take-cont h4{
+        font-size: 18px;
+    }
+    .calender{
+        width: 90%;
+    }
+    .login-area .row{
+        flex-direction: column-reverse!important;
+    }
+    .qr-area{
+        margin-top: 120px;
+        margin-bottom: 30px;
+    }
+
+  }
