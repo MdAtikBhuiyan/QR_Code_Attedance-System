@@ -15,7 +15,6 @@ const TNav = () => {
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="ml-auto">
                         <Link to="/take" className='nav-link'>Take Attedance</Link>
-                        <Link to="/myDevice" className='nav-link'>Show Attedance</Link>
                         {
                             loggedInUser?.email==='atik@gmail.com' && 
                             <Link to="/admin" className='nav-link'> Admin </Link>
